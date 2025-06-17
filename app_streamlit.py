@@ -7,7 +7,7 @@ import pandas as pd
 # --- DEBUG FLAG for Streamlit specific prints ---
 DEBUG_STREAMLIT = False # Set to True to see detailed UI debug messages
 
-FASTAPI_BASE_URL = "http://localhost:8000"
+FASTAPI_BASE_URL = "https://document-extractor-4llq.onrender.com"
 
 def call_api(endpoint, method="get", json_data=None, form_data=None, files=None):
     url = f"{FASTAPI_BASE_URL}{endpoint}"
